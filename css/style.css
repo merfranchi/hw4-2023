@@ -24,6 +24,7 @@ nav a:focus{
 .container{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto;
   row-gap: 30px;
 }
 
@@ -40,7 +41,8 @@ nav a:focus{
 
   /* Requirement 5 code here -- Do not remove this comment. */
 .about, .clients, .method, .contact{
-  grid-column: 2;
+  grid-column-start: 2;
+  grid-column-end: auto;
 }
 
   /* Requirement 6 code here -- Do not remove this comment. */
@@ -50,7 +52,10 @@ img{
 
   /* Requirement 7 code here -- Do not remove this comment. */
   .about-image, .clients-image, .method-image, .contact-image{
-    grid-column: span 3;
+    grid-column-start: span 3;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto; 
     max-height: 500px;
   }
 

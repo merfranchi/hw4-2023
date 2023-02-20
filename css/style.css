@@ -52,8 +52,7 @@ img{
 
   /* Requirement 7 code here -- Do not remove this comment. */
   .about-image, .clients-image, .method-image, .contact-image{
-    grid-column-start: span 3;
-    grid-column-end: auto;
+    grid-column: 1 / span 3;
     grid-row-start: auto;
     grid-row-end: auto; 
     max-height: 500px;
